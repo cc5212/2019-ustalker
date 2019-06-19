@@ -1,5 +1,5 @@
 # 2019-ustalker
-Los tenemos a todos identificados
+Los tenemos a todos identificados. [Gabriel Chaperon, Valeria Guidotti, Francisco Lecaros. Group 15]
 
 # Overview
 
