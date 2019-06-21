@@ -95,6 +95,7 @@ Resultados de palabras mas usadas:
 | 🙂  | 48623  |
 
 -Los comentarios raíz:
+
 | Palabra | Ocurrencias |
 |----|--------|
 | saludos | 9125 |
@@ -103,8 +104,9 @@ Resultados de palabras mas usadas:
 
 -Los comentarios hijos:
 
-| 😆  | 212297 |
+| Palabra | Ocurrencias |
 |----|--------|
+| 😆  | 212297 |
 | up | 52788  |
 | 🙂  | 40395  |
 
@@ -112,6 +114,8 @@ Resultados de palabras mas usadas:
 
 Los threads con mas comentarios:
 
+| Thread | Cantidad de Comentarios |
+|----|--------|
 | a Beauchef le esta faltando Rock   | 138 |
 |------------------------------------|-----|
 | Baños Cafetería                    | 108 |
