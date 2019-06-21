@@ -81,10 +81,88 @@ _Nota: No fueron encontrados problemas en el desarrollo del proyecto._
 <!-- lecaro -->
 # Results
 
-Detail the results of the project. Different projects will have different types of results; e.g., run-times or result sizes, evaluation of the methods you're comparing, the interface of the system you've built, and/or some of the results of the data analysis you conducted.
+Dado que durante el proyecto no se trabajo con un dataset grande no se medio el tiempo que se demoraban las consultas dado que no proporcionaba ningun dato interesante. 
+
+Dado lo anterior nos enfocaremos en las consultas que se hicieron y los resultados que entregaron.Ahora mostraremos parte de los resulatdos ya que poner los resultados completos 
+
+Resultados de palabras mas usadas:
+
+-Palabras mas usadas en todos lados:
+
+| 😆  | 219121 |
+|----|--------|
+| up | 53068  |
+| 🙂  | 48623  |
+
+-Los comentarios raiz:
 
 | saludos | 9125 |
 |---------|------|
+| gracias | 9086 |
+| 🙂       | 8228 |
+
+-Los comentarios hijos:
+
+| 😆  | 212297 |
+|----|--------|
+| up | 52788  |
+| 🙂  | 40395  |
+
+
+
+Los threads con mas comentarios:
+
+| a Beauchef le esta faltando Rock   | 138 |
+|------------------------------------|-----|
+| Baños Cafetería                    | 108 |
+| juego de la palabra indefinido 2.0 | 107 |
+
+
+
+Cantidad de personas que comentan por año(ordenado por año):
+
+| 2002 | 229  |
+|------|------|
+| 2011 | 3876 |
+| 2018 | 3961 |
+
+
+
+Top 10 commenters por año(por temas de espacio se mostraran 3 por año):
+
+| 2002 | Mauricio Vásquez M./93      | Marcelo Vega F./52              | Jorge Ramirez Lores/49 |
+|------|-----------------------------|---------------------------------|------------------------|
+| 2011 | Rodolfo Gutierrez Romo/7102 | Anibal Estabn Llanos Prado/3085 | Andrés V Aguirre/2923  |
+| 2018 | Cesar Diaz B./259           | Mario Medina Roa/201            | Pablo Pizarro/195      |
+
+
+
+Top commenters del curso: 
+
+| Simon Sepúlveda Osses | 570 |
+|-----------------------|-----|
+| Juan P. Ruiz          | 535 |
+| Adriana Concha        | 378 |
+| Karina Parga          | 331 |
+| Gabriel Chaperon B.   | 317 |
+
+
+
+Par de personas que han discutido:
+
+Se entiende por una discusion cuando un par de personas  A, B comentan de tal forma que se produce la siguiente interaccion al menos una vez: A comenta, B le responde a A, A le responde de vuelta a B.
+
+| Andrés V. Aguirre      | Carlos Cárdenas        | 123 |
+|------------------------|------------------------|-----|
+| Carlos Alvarado Godoy  | Rodolfo Gutiérrez Romo | 112 |
+| Ignacio Correa Falconi | Rodolfo Gutiérrez Romo | 85  |
+
+
+
+Tambien se hicieron consultas con un fin mas ludico como:
+-La cantidad de votaciones "+1/-1" que han habido antes y despues de que se sacara el "+1/-1" del foro.
+-Cuantas veces ha comentado Patricio Aceituno antes y despues que le dijieran "que bacan tu apellido".
+-Cuantas veces ha comentado antes y despues del "incidente de las rodilleras".
 
 
 
