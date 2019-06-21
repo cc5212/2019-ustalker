@@ -74,6 +74,7 @@ El último motivo de la elección de Spark el aumento y superioridad en el [inte
 
 La redacción de *jobs* de Spark en Java 8 fue realizada a partir de los ejemplos provistos en clases y en la [página de Spark](https://spark.apache.org/examples.html), acompañado de la lectura y estudio de la documentación de [JavaRDD](https://spark.apache.org/docs/2.2.1/api/java/org/apache/spark/api/java/JavaRDD.html) y [JavaPairRDD](https://spark.apache.org/docs/2.2.1/api/java/org/apache/spark/api/java/JavaPairRDD.html).
 
+Respecto a los resultados, estos no fueron escritos en un archivo de salida, debido a que se priorizó la rapidez para visualizarlos, para lo cual se mostraban los computos finales en salida estándar.
 
 _Nota: No fueron encontrados problemas en el desarrollo del proyecto._
 
