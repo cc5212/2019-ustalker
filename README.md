@@ -9,35 +9,34 @@ Proyecto de CC5212 Procesamiento masivo de datos, en donde analizamos un dataset
 
 
 <!-- gabriel -->
-# Descripcion del contenido del repositorio
-En el directorio data se encuentra una pequeña descripcion de los datos junto con archivos extra que fueron usados para el proyecto, como las stop words y la lista de integrantes del curso.
+# Descripción del contenido del repositorio
+En el directorio [data](/data/) se encuentra una pequeña descripción de los datos junto con archivos extra que fueron utilizados para el proyecto, como las _stop-words_ y la lista de integrantes del curso.
 
 
 <!-- lecaro -->
 # Overview
 
 <!-- holaaaaaaaaaaaaaaaaaaaaa -->
-EL obejtivo general del proyecto es ver el comportamiento de la comunidad en el foro de la facultad (y buscar memes). La idea es ver como ha sido el comportamiento a traves de los años viendo, por ejemplo, el flujo de los comentarios y ver si hay correlacion con eventos que han ocurrido en la facultad o el cambio de tecnologias. Otro ejemplo es ver quienes son los que mas comentan en el foro de la facultad, quienes son las personas que mas discuten en el foro y otras consultas relevantes para historia de la facultad.
+EL objetivo general del proyecto es ver el comportamiento de la comunidad _"Beauchefiana"_ en el foro de la facultad (y buscar memes). La idea es ver como ha sido el comportamiento a través de los años viendo, por ejemplo, el flujo de los comentarios y observar si existe alguna correlación con eventos que han ocurrido en la facultad o el cambio de tecnologías. Otro ejemplo es ver que personas son las que más comentan en el foro de la facultad, quiénes son las personas que más discuten en el foro y otras consultas relevantes para la historia de la facultad.
 
 <!-- gabriel -->
 # Data
-rekt asd
 
-Los datos fueron escrapeados del foro de la facultad en u-cursos. Este trabajo fue realizado por el grupo y por lo tanto trabajamos con un dataset custom, nunca antes visto, que no se puede encontrar en ningun otro lugar del mundooo. El dataset esta organizado en dos tablas, una para los comentarios raiz y una de los comentarios que son respuestas. Se tomo esta decision porque los comentario raiz tiene titulo y no tiene padre, pero los comentarios que son respuesta no tienen titulo y si tienen padre.
+Los datos fueron escrapeados del foro de la facultad en u-cursos. Este trabajo fue realizado por el grupo y por lo tanto trabajamos con un dataset custom, nunca antes visto, que no se puede encontrar en ningún otro lugar del mundoooo. El dataset está organizado en dos tablas, una para los comentarios raíz y una de los comentarios que son respuestas. Se tomo esta decisión porque los comentarios raíz tienen título y no tienen padre, pero los comentarios que son respuesta no tienen título y sí tienen padre.
 
-Los archivos son columnas separadas por tabulacion, sin header, en donde al mensaje se le extrayeron todos los espacios blancos que no sean el caracter espacio. Esto permite leer los archivos por fila, sin tener que requerir de la logica de un interprete csv para leer los archivos. 
+Los archivos son columnas separadas por tabulación, sin header en donde al mensaje se le extrayeron todos los espacios blancos que no sean el caracter espacio. Esto permite leer los archivos por fila, sin tener que requerir de la lógica de un intérprete csv para leer los archivos. 
 
-El archivo de comentarios hijo contiene 1.3 millones de lineas aproximadamente y el archivo de comentarios raiz contiene aproximadamente 100 mil lineas.
+El archivo de comentarios hijo contiene 1.3 millones de líneas aproximadamente y el archivo de comentarios raíz contiene aproximadamente 100 mil líneas.
 
-Ambas tablas tienen filas repetidas, porque las paginas del foro de u-cursos se mueven dinamicamente a medida que se van agregando comentarios, lo que genera que algunos comentarios se cambien de pagina en el tiempo que transcurre entre la descargas de las distintas paginas.
+Ambas tablas tienen filas repetidas, porque las páginas del foro de u-cursos se mueven dinámicamente a medida que se van agregando comentarios, lo que genera que algunos comentarios se cambien de página en el tiempo que transcurre entre la descargas de las distintas páginas.
 
 
-La tabla de los comentarios raiz tiene el siguiente header:
+La tabla de los comentarios raíz tiene el siguiente header:
 
 | id  | titulo  | autor   | fecha   | categoria   | mensaje   |
 |---- |:------: |------:  |-------  |-----------  |---------  |
 
-La fecha esta en unix time en segundos. El resto de nombres son autoexplicativos.
+La fecha esta en Unix time en segundos. El resto de nombres son autoexplicativos.
 
 
 Por otro lado, los comentarios que son respuestas tiene el siguiente header:
@@ -45,7 +44,7 @@ Por otro lado, los comentarios que son respuestas tiene el siguiente header:
 | id_mensaje  | id_raiz   | id_padre  | autor   | fecha   | mensaje   |
 |------------ |:-------:  |---------: |-------  |-------  |---------  |
 
-El primer id es del mensaje mismo, este id es unico entre todos los mensajes, incluyendo raices y comentarios respuesta. La id_raiz corresponde a la id de la raiz a la que pertenece la respuesta. La id_padre corresponde a la id del mensaje directo al que responde, a su padre directo. La fecha esta en el mismo formato que los comentarios raiz. El resto de campos son autoexplicativos.
+El primer id es del mensaje mismo, este id es único entre todos los mensajes, incluyendo raices y comentarios respuesta. La id_raiz corresponde a la id de la raíz a la que pertenece la respuesta. La id_padre corresponde a la id del mensaje directo al que responde, a su padre directo. La fecha está en el mismo formato que los comentarios raíz. El resto de campos son autoexplicativos.
 
 
 Los datos se pueden encontrar en el siguiente link https://users.dcc.uchile.cl/~gchapero/ustalker/ustalker_wrepeat.tar.xz
@@ -94,7 +93,7 @@ Resultados de palabras mas usadas:
 | up | 53068  |
 | 🙂  | 48623  |
 
--Los comentarios raiz:
+-Los comentarios raíz:
 
 | saludos | 9125 |
 |---------|------|
