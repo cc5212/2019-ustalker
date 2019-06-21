@@ -21,8 +21,25 @@ EL obejtivo general del proyecto es ver el comportamiento de la comunidad en el 
 
 <!-- gabriel -->
 # Data
+Los datos fueron escrapeados del foro de la facultad en u-cursos. Este trabajo fue realizado por el grupo y por lo tanto trabajamos con un dataset custom, nunca antes visto, que no se puede encontrar en ningun otro lugar del mundooo. El dataset esta organizado en dos tablas, una para los comentarios raiz y una de los comentarios que son respuestas. Se tomo esta decision porque los comentario raiz tiene titulo y no tiene padre, pero los comentarios que son respuesta no tienen titulo y si tienen padre.
 
-Describe the raw dataset that you considered for your project. Where did it come from? Why was it chosen? What information does it contain? What format was it in? What size was it? How many lines/records? Provide links.
+
+Los archivos son columnas separadas por tabulacion, sin header, en donde al mensaje se le extrayeron todos los espacios blancos que no sean el caracter espacio. Esto permite leer los archivos por fila, sin tener que requerir de la logica de un interprete csv para leer los archivos.
+
+Ambas tablas tienen filas repetidas, porque las paginas del foro de u-cursos se mueven dinamicamente a medida que se van agregando comentarios, lo que genera que algunos comentarios se cambien de pagina en el tiempo que transcurre entre la descargas de las distintas paginas.
+
+
+La tabla de los comentarios raiz tiene el siguiente header:
+| id_mensaje | titulo | autor | fecha | categoria | mensaje |
+|------------|:------:|------:|-------|-----------|---------|
+
+Los nombre son autoexplicativos.
+
+
+Por otro lado, los comentarios que son respuestas tiene el siguiente header:
+| id_mensaje | id_raiz | id_padre | autor | fecha | mensaje |
+|------------|:-------:|---------:|-------|-------|---------|
+El primer id es del mensaje mismo, este id es unico entre todos los mensajes, incluyendo raices y comentarios respuesta. La id_raiz corresponde a la id de la raiz a la que pertenece la respuesta. La id_padre corresponde a la id del mensaje directo al que responde, a su padre directo. El resto de campos son autoexplicativos.
 
 
 <!-- guido -->
