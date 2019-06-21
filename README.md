@@ -1,55 +1,15 @@
 # 2019-ustalker
 Los tenemos a todos identificados. [Gabriel Chaperon, Valeria Guidotti, Francisco Lecaros. Group 15]
 
-# Como correr los jobs
-Los datos se deberian encontrar en https://users.dcc.uchile.cl/~gchapero/ustalker/ustalker_wrepeat.tar.xz
-
-Los jobs de spark fueron hecho con java. Para crear el .jar simplemente hay que moverse a la carpeta java-apps donde esta el archivo pom.xml y correr `mvn package`. Esto deberia bajar las dependencias y empaquetar el proyecto.
-
-Luego, para poder correr los distintos jobs se tiene que ejecutar el siguiente comando en el cluster
-
-```shell
-spark-submit --class <NOMBRE DE LA CLASE> --master spark://cluster-01:7077 <NOBMRE DEL JAR>.jar <ARGS>
-
-```
-Cada job recibe args ligeramente distintos, pero todos son de la forma
-```
-hdfs://cm:9000/<UBICACION EN EL HDFS>
-```
-A continuacion se documentan los argumentos que reciben cada uno de los jobs
-* CountWords
-    1. stop_words
-    2. roots
-    3. childs
-* DuckOlives
-    1. roots 
-    2. childs
-* JulyRooms
-    1. roots 
-    2. childs
-* MostAnsweredRoots
-    1. roots 
-    2. childs
-* PersonsPerYear
-    1. roots 
-    2. childs
-* PlusOneMinusOne
-    1. roots
-* TopCommanders
-    1. roots 
-    2. childs
-    3. comrades
-* TopCommentersPerTheme
-    1. roots 
-    2. childs 
-* TopFighters
-    1. roots
-    2. childs
 
 
 # Overview
 
 State what is the main goal of the project. State what sorts of question(s) you want to answer or what sort of system you want to build. (Questions may be non-technical -- e.g., is there a global correlation between coffee consumption and research output -- so long as they require data analysis or other technical solutions.)
+
+
+<!-- holaaaaaaaaaaaaaaaaaaaaa -->
+EL obejtivo general del proyecto es ver el comportamiento de la comunidad en el foro de la facultad (y buscar memes). La idea es ver como ha sido el comportamiento a traves de los años viendo, por ejemplo, el flujo de los comentarios y ver si hay correlacion con eventos que han ocurrido en la facultad o el cambio de tecnologias. Otro ejemplo es ver quienes son los que mas comentan en el foro de la facultad, quienes son las personas que mas discuten en el foro y otras consultas relevantes para historia de la facultad.
 
 # Data
 
@@ -73,7 +33,7 @@ You can use this for key code snippets that you don't want to clutter the main t
 
 hola que tal
 
-
+## Des
 
 
 
