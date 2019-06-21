@@ -21,6 +21,8 @@ EL obejtivo general del proyecto es ver el comportamiento de la comunidad en el 
 
 <!-- gabriel -->
 # Data
+rekt guido
+
 Los datos fueron escrapeados del foro de la facultad en u-cursos. Este trabajo fue realizado por el grupo y por lo tanto trabajamos con un dataset custom, nunca antes visto, que no se puede encontrar en ningun otro lugar del mundooo. El dataset esta organizado en dos tablas, una para los comentarios raiz y una de los comentarios que son respuestas. Se tomo esta decision porque los comentario raiz tiene titulo y no tiene padre, pero los comentarios que son respuesta no tienen titulo y si tienen padre.
 
 
