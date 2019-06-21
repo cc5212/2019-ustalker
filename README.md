@@ -25,8 +25,9 @@ rekt asd
 
 Los datos fueron escrapeados del foro de la facultad en u-cursos. Este trabajo fue realizado por el grupo y por lo tanto trabajamos con un dataset custom, nunca antes visto, que no se puede encontrar en ningun otro lugar del mundooo. El dataset esta organizado en dos tablas, una para los comentarios raiz y una de los comentarios que son respuestas. Se tomo esta decision porque los comentario raiz tiene titulo y no tiene padre, pero los comentarios que son respuesta no tienen titulo y si tienen padre.
 
+Los archivos son columnas separadas por tabulacion, sin header, en donde al mensaje se le extrayeron todos los espacios blancos que no sean el caracter espacio. Esto permite leer los archivos por fila, sin tener que requerir de la logica de un interprete csv para leer los archivos. 
 
-Los archivos son columnas separadas por tabulacion, sin header, en donde al mensaje se le extrayeron todos los espacios blancos que no sean el caracter espacio. Esto permite leer los archivos por fila, sin tener que requerir de la logica de un interprete csv para leer los archivos.
+El archivo de comentarios hijo contiene 1.3 millones de lineas aproximadamente y el archivo de comentarios raiz contiene aproximadamente 100 mil lineas.
 
 Ambas tablas tienen filas repetidas, porque las paginas del foro de u-cursos se mueven dinamicamente a medida que se van agregando comentarios, lo que genera que algunos comentarios se cambien de pagina en el tiempo que transcurre entre la descargas de las distintas paginas.
 
@@ -36,7 +37,7 @@ La tabla de los comentarios raiz tiene el siguiente header:
 | id  | titulo  | autor   | fecha   | categoria   | mensaje   |
 |---- |:------: |------:  |-------  |-----------  |---------  |
 
-Los nombre son autoexplicativos.
+La fecha esta en unix time en segundos. El resto de nombres son autoexplicativos.
 
 
 Por otro lado, los comentarios que son respuestas tiene el siguiente header:
@@ -44,8 +45,10 @@ Por otro lado, los comentarios que son respuestas tiene el siguiente header:
 | id_mensaje  | id_raiz   | id_padre  | autor   | fecha   | mensaje   |
 |------------ |:-------:  |---------: |-------  |-------  |---------  |
 
-El primer id es del mensaje mismo, este id es unico entre todos los mensajes, incluyendo raices y comentarios respuesta. La id_raiz corresponde a la id de la raiz a la que pertenece la respuesta. La id_padre corresponde a la id del mensaje directo al que responde, a su padre directo. El resto de campos son autoexplicativos.
+El primer id es del mensaje mismo, este id es unico entre todos los mensajes, incluyendo raices y comentarios respuesta. La id_raiz corresponde a la id de la raiz a la que pertenece la respuesta. La id_padre corresponde a la id del mensaje directo al que responde, a su padre directo. La fecha esta en el mismo formato que los comentarios raiz. El resto de campos son autoexplicativos.
 
+
+Los datos se pueden encontrar en el siguiente link https://users.dcc.uchile.cl/~gchapero/ustalker/ustalker_wrepeat.tar.xz
 
 <!-- guido -->
 # Metodología
