@@ -71,10 +71,13 @@ La elección de Spark como *engine* para el *data processing* se explica por la 
 El último motivo de la elección de Spark el aumento y superioridad en el interés mundial de Apache Spark por sobre Apache Hadoop y Apache Pig lo que lo hace más atrayente aumentar el conocimiento grupal en esta herramienta.
 
 <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/1845_RC03/embed_loader.js">
+
 </script> 
 
 <script type="text/javascript">
+
 trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"Apache Spark","geo":"","time":"2014-06-21 2019-06-21"},{"keyword":"Apache Hadoop","geo":"","time":"2014-06-21 2019-06-21"},{"keyword":"Apache Pig","geo":"","time":"2014-06-21 2019-06-21"}],"category":0,"property":""}, {"exploreQuery":"date=today%205-y&q=Apache%20Spark,Apache%20Hadoop,Apache%20Pig","guestPath":"https://trends.google.es:443/trends/embed/"}); 
+
 </script>
 
 
