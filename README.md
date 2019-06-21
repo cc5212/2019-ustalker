@@ -89,22 +89,25 @@ Resultados de palabras mas usadas:
 
 -Palabras mas usadas en todos lados:
 
-| 😆  | 219121 |
+| Palabra | Ocurrencias |
 |----|--------|
+| 😆  | 219121 |
 | up | 53068  |
 | 🙂  | 48623  |
 
 -Los comentarios raíz:
 
+| Palabra | Ocurrencias |
+|----|--------|
 | saludos | 9125 |
-|---------|------|
 | gracias | 9086 |
 | 🙂       | 8228 |
 
 -Los comentarios hijos:
 
-| 😆  | 212297 |
+| Palabra | Ocurrencias |
 |----|--------|
+| 😆  | 212297 |
 | up | 52788  |
 | 🙂  | 40395  |
 
@@ -112,6 +115,8 @@ Resultados de palabras mas usadas:
 
 Los threads con mas comentarios:
 
+| Thread | Cantidad de Comentarios |
+|----|--------|
 | a Beauchef le esta faltando Rock   | 138 |
 |------------------------------------|-----|
 | Baños Cafetería                    | 108 |
@@ -171,8 +176,15 @@ Tambien se hicieron consultas con un fin mas ludico como:
 
 <!-- quien sabe -->
 # Conclusion
+que aprendimos?
+
+
+
+
 
 Summarise main lessons learnt. What was easy? What was difficult? What could have been done better or more efficiently?
+
+
 
 
 <!-- que wea -->
@@ -187,3 +199,4 @@ You can use this for key code snippets that you don't want to clutter the main t
   * gabriel chaperon
   * valeria guidotti
   * francisco lecaro
+ssss
