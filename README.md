@@ -1,9 +1,11 @@
 # 2019-ustalker
 Proyecto de CC5212 Procesamiento masivo de datos, en donde analizamos un dataset extraido del foro de la facultad.
 
-> En este foro no se mueve una hoja sin que yo lo sepa
->   [Gabriel Chaperon, Valeria Guidotti, Francisco Lecaros. Group 15]
 
+
+> En este foro no se mueve una hoja sin que yo lo sepa
+>
+> -- <cite>[Gabriel Chaperon, Valeria Guidotti, Francisco Lecaros. Group 15]</cite>
 
 
 <!-- gabriel -->
