@@ -160,8 +160,11 @@ Se entiende por una discusion cuando un par de personas  A, B comentan de tal fo
 
 
 Tambien se hicieron consultas con un fin mas ludico como:
+
 -La cantidad de votaciones "+1/-1" que han habido antes y despues de que se sacara el "+1/-1" del foro.
+
 -Cuantas veces ha comentado Patricio Aceituno antes y despues que le dijieran "que bacan tu apellido".
+
 -Cuantas veces ha comentado antes y despues del "incidente de las rodilleras".
 
 
