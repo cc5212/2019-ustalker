@@ -73,6 +73,11 @@ La elección de Spark como *engine* para el *data processing* se explica por la 
 
 El último motivo de la elección de Spark el aumento y superioridad en el [interés mundial](https://trends.google.es/trends/explore?date=today%205-y&q=Apache%20Spark,Apache%20Hadoop,Apache%20Pig) de Apache Spark por sobre Apache Hadoop y Apache Pig lo que lo hace más atrayente aumentar el conocimiento grupal en esta herramienta.
 
+La redacción de *jobs* de Spark en Java 8 fue realizada a partir de los ejemplos provistos en clases y en la [página de Spark](https://spark.apache.org/examples.html), acompañado de la lectura y estudio de la documentación de [JavaRDD](https://spark.apache.org/docs/2.2.1/api/java/org/apache/spark/api/java/JavaRDD.html) y [JavaPairRDD](https://spark.apache.org/docs/2.2.1/api/java/org/apache/spark/api/java/JavaPairRDD.html).
+
+
+_Nota: No fueron encontrados problemas en el desarrollo del proyecto._
+
 <!-- lecaro -->
 # Results
 
