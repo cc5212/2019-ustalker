@@ -88,15 +88,16 @@ Resultados de palabras mas usadas:
 
 -Palabras mas usadas en todos lados:
 
-| 😆  | 219121 |
+| Palabra | Ocurrencias |
 |----|--------|
+| 😆  | 219121 |
 | up | 53068  |
 | 🙂  | 48623  |
 
 -Los comentarios raíz:
-
+| Palabra | Ocurrencias |
+|----|--------|
 | saludos | 9125 |
-|---------|------|
 | gracias | 9086 |
 | 🙂       | 8228 |
 
