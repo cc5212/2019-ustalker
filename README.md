@@ -31,7 +31,7 @@ Ambas tablas tienen filas repetidas, porque las paginas del foro de u-cursos se 
 
 La tabla de los comentarios raiz tiene el siguiente header:
 | id_mensaje | titulo | autor | fecha | categoria | mensaje |
-|------------|:------:|------:|-------|-----------|---------|
+|------------|--------|-------|-------|-----------|---------|
 
 Los nombre son autoexplicativos.
 
