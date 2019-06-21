@@ -55,7 +55,7 @@ Los datos se pueden encontrar en el siguiente link https://users.dcc.uchile.cl/~
 
 ## Técnicas y tecnologías utilizadas
 
-El desarrollo del proyecto se divide en dos partes.
+El desarrollo del proyecto se divide en dos partes, de las cuales solo la de procesamiento es relevante a los contenidos del curso.
 
 ### 1. Descarga del dataset
 
