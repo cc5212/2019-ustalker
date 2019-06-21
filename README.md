@@ -80,9 +80,9 @@ _Nota: No fueron encontrados problemas en el desarrollo del proyecto._
 <!-- lecaro -->
 # Results
 
-Dado que durante el proyecto no se trabajo con un dataset grande no se medio el tiempo que se demoraban las consultas dado que no proporcionaba ningun dato interesante. 
+Dado que durante el proyecto no se trabajo con un dataset grande no se midio el tiempo que se demoraban las consultas dado que no proporcionaba ningun dato interesante. 
 
-Dado lo anterior nos enfocaremos en las consultas que se hicieron y los resultados que entregaron.Ahora mostraremos parte de los resulatdos ya que poner los resultados completos 
+Dado lo anterior nos enfocaremos en las consultas que se hicieron y los resultados que entregaron.Ahora mostraremos parte de los resulatdos ya que poner los resultados enteros no tendria sentido.
 
 Resultados de palabras mas usadas:
 
