@@ -26,7 +26,7 @@ Los datos fueron escrapeados del foro de la facultad en u-cursos. Este trabajo f
 
 Los archivos son columnas separadas por tabulación, sin header en donde al mensaje se le extrayeron todos los espacios blancos que no sean el caracter espacio. Esto permite leer los archivos por fila, sin tener que requerir de la lógica de un intérprete csv para leer los archivos. 
 
-El archivo de comentarios hijo contiene 1.3 millones de líneas aproximadamente y el archivo de comentarios raíz contiene aproximadamente 100 mil líneas.
+Ambos archivos en conjunto y descromidos pesan 277mb aproximadamente. El archivo de comentarios hijo contiene 1.3 millones de líneas aproximadamente y el archivo de comentarios raíz contiene aproximadamente 100 mil líneas.
 
 Ambas tablas tienen filas repetidas, porque las páginas del foro de u-cursos se mueven dinámicamente a medida que se van agregando comentarios, lo que genera que algunos comentarios se cambien de página en el tiempo que transcurre entre la descargas de las distintas páginas.
 
@@ -170,16 +170,32 @@ Tambien se hicieron consultas con un fin mas ludico como:
 
 <!-- quien sabe -->
 # Conclusion
-que aprendimos?
 
 
 
 
+Con respecto a la tecnologia escogida, creemos que la sintaxis de spark es agradable e intuitiva, es una tecnologia que es popular y que ademas esta ganando popularidad. Por otro lado creemos que si bien java es quiza un poco verboso, en este caso nos sirvio para orientarnos con las estructuras de los RDD's y nos ayudo a evitar errores. Quiza si fueramos mas experimentados con el framework la verbosidad seria un problema mayor y seria mas recomendable usar Scala o Python.
 
-Summarise main lessons learnt. What was easy? What was difficult? What could have been done better or more efficiently?
+Con respecto a la complejidad del proyecto, ubo varias consultas que fueron de complejidad baja porque eran similares a las que vimos en clases. Notablemente la consulta de contar palabras mas usadas era calcada, o consultas que requerian comparar cantidad de ocurrencias antes y despues de un evento IMPORTANTE consistian simplemente en filtrar por fecha.
 
 
+De todas formas hubo algunas consultas que fueron mas dificiles, en particular la pregunta de discusiones fue bastante dificil porque hubo que hacer 3 joins. Esto se debio a que hay que poner las llaves correctas en los PairRDD y hay que tener cuidado con los valores anidados que resultan de cada join y ademas fue costosa de ejecutar. Para esta pregunta pensamos en usar Neo4j, que es idoneo para crear el grafo que corresponde a las respuestas entre usuarios, pero esta tecnologia se aprendio muy tarde en el ramo y no alcanzamos a usarla.
 
+La consulta de los top comentadores por anno tambien fue bastante dificil, pero esta esta vez nos costo por el bajo manejo de spark, ya que tuvimos problemas al tratar de usar aggregacion y la serializacion de estructuras. Finalmente optamos por usar agrupacion a pesar de que segun la documentacion esto ocupa mas recursos.
+
+
+A largo del desarrollo del proyecto no guardamos ningun resultado obtenido, sino que los resultados lo mostrabamos en pantalla cada vez que ejecutabamos un job. Esto resulto en perdidas inecesarias de tiempo cuando queriamos recuperar algun resultados previo. Esto creemos que podriamos haberlo hecho mejor.
+
+
+Tomar la decision de correr los jobs localmente creemos que fue una buena decision porque no fuimos afectados por la alta congestion del cluster y la incomodidad de tener que subir nuestros ejecutables cada vez. Gracias a esto nuestros ciclos de desarrollo fueron mas rapidos porque podiamos probar nuestros cambios inmediatamente.
+
+Por otro lado, trabajar con intelliJ permite avanzar rapidamente gracias al autocompletado y la sugerencia de metodos posibles sobre un objeto.
+
+De todas formas somos concientes que esto fue posible unicamente porque nuestro dataset era relativamente pequenno, pero el resto de conclusiones son aplicables a nuestro caso porque son independientes del tamanno del dataset.
+
+
+Finalmente 
+las redes sociales mataron el foro,  a partir del aprox 2014 
 
 <!-- que wea -->
 # Appendix
