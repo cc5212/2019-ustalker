@@ -136,7 +136,7 @@ Se muestra el Top 3 resultados por año. En el archivo [TopCommanders.txt](/resu
 | 2011 | Rodolfo Gutierrez Romo(7102) | Anibal Estabn Llanos Prado(3085) | Andrés V Aguirre(2923)  |
 | 2018 | Cesar Diaz B.(259)           | Mario Medina Roa(201)            | Pablo Pizarro(195)      |
 
-
+De esto resultados se puede observar que la actividad en el foro ha ido en disminucion y creemos que esto se debe a APOGEO de las redes sociales que progresivamente han ido ganando usuarios en los ultimos años.
 
 ## Top _commenters_ de integrantes del curso 
 
@@ -193,9 +193,6 @@ También se hizo consultas con un fin más lúdico como:
 <!-- quien sabe -->
 # Conclusion
 
-
-
-
 Con respecto a la tecnologia escogida, creemos que la sintaxis de spark es agradable e intuitiva, es una tecnologia que es popular y que ademas esta ganando popularidad. Por otro lado creemos que si bien java es quiza un poco verboso, en este caso nos sirvio para orientarnos con las estructuras de los RDD's y nos ayudo a evitar errores. Quiza si fueramos mas experimentados con el framework la verbosidad seria un problema mayor y seria mas recomendable usar Scala o Python.
 
 Con respecto a la complejidad del proyecto, ubo varias consultas que fueron de complejidad baja porque eran similares a las que vimos en clases. Notablemente la consulta de contar palabras mas usadas era calcada, o consultas que requerian comparar cantidad de ocurrencias antes y despues de un evento IMPORTANTE consistian simplemente en filtrar por fecha.
@@ -216,13 +213,10 @@ Por otro lado, trabajar con intelliJ permite avanzar rapidamente gracias al auto
 De todas formas somos concientes que esto fue posible unicamente porque nuestro dataset era relativamente pequenno, pero el resto de conclusiones son aplicables a nuestro caso porque son independientes del tamanno del dataset.
 
 
-Finalmente 
-las redes sociales mataron el foro,  a partir del aprox 2014 
-
 <!-- que wea -->
 # Appendix
 
-You can use this for key code snippets that you don't want to clutter the main text.
+Esto es un [apendice](https://www.efesalud.com/wp-content/blogs.dir/2/files/2018/09/apendice-e1537881196664.jpg)
 
 
 ### INFO
