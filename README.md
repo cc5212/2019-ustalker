@@ -20,7 +20,7 @@ En el directorio [data](/data/) se encuentra una pequeña descripción de los da
 EL objetivo general del proyecto es ver el comportamiento de la comunidad _"Beauchefiana"_ en el foro de la facultad (y buscar memes). La idea es ver como ha sido el comportamiento a través de los años viendo, por ejemplo, el flujo de los comentarios y observar si existe alguna correlación con eventos que han ocurrido en la facultad o el cambio de tecnologías. Otro ejemplo es ver que personas son las que más comentan en el foro de la facultad, quiénes son las personas que más discuten en el foro y otras consultas relevantes para la historia de la facultad.
 
 <!-- gabriel -->
-# Data
+# Datos
 
 Los datos fueron escrapeados del foro de la facultad en u-cursos. Este trabajo fue realizado por el grupo y por lo tanto trabajamos con un dataset custom, nunca antes visto, que no se puede encontrar en ningún otro lugar del mundoooo. El dataset está organizado en dos tablas, una para los comentarios raíz y una de los comentarios que son respuestas. Se tomo esta decisión porque los comentarios raíz tienen título y no tienen padre, pero los comentarios que son respuesta no tienen título y sí tienen padre.
 
@@ -75,6 +75,11 @@ El último motivo de la elección de Spark el aumento y superioridad en el [inte
 La redacción de *jobs* de Spark en Java 8 fue realizada a partir de los ejemplos provistos en clases y en la [página de Spark](https://spark.apache.org/examples.html), acompañado de la lectura y estudio de la documentación de [JavaRDD](https://spark.apache.org/docs/2.2.1/api/java/org/apache/spark/api/java/JavaRDD.html) y [JavaPairRDD](https://spark.apache.org/docs/2.2.1/api/java/org/apache/spark/api/java/JavaPairRDD.html).
 
 Respecto a los resultados, estos no fueron escritos en un archivo de salida, debido a que se priorizó la rapidez para visualizarlos, para lo cual se mostraban los computos finales en salida estándar.
+
+
+## Problemas o dificultades
+
+Al realizar el proyecto se tuvo una dificultad al querer trabajar con una [PriorityQueue](https://docs.oracle.com/javase/8/docs/api/java/util/PriorityQueue.html) de Java 8 en una agregación, ya que se encontraba una NotSerializableException. Esto se solucionó evitando la agregación y utilizando un groupByKey de JavaPairRDD y luego un mapToPair (Ver línea 42 de [TopCommanders.java](/java-apps/src/main/java/TopCommanders.java)).
 
 <!-- lecaro -->
 # Resultados
@@ -136,7 +141,7 @@ Se muestra el Top 3 resultados por año. En el archivo [TopCommanders.txt](/resu
 | 2011 | Rodolfo Gutierrez Romo(7102) | Anibal Estabn Llanos Prado(3085) | Andrés V Aguirre(2923)  |
 | 2018 | Cesar Diaz B.(259)           | Mario Medina Roa(201)            | Pablo Pizarro(195)      |
 
-De esto resultados se puede observar que la actividad en el foro ha ido en disminucion y creemos que esto se debe a APOGEO de las redes sociales que progresivamente han ido ganando usuarios en los ultimos años.
+De esto resultados se puede observar que la actividad en el foro ha ido disminuyendo y se cree que esto se debe a APOGEO de las redes sociales, que progresivamente han ido ganando usuarios en los últimos años.
 
 ## Top _commenters_ de integrantes del curso 
 
@@ -191,26 +196,26 @@ También se hizo consultas con un fin más lúdico como:
 
 
 <!-- quien sabe -->
-# Conclusion
+# Conclusión
 
-Con respecto a la tecnologia escogida, creemos que la sintaxis de spark es agradable e intuitiva, es una tecnologia que es popular y que ademas esta ganando popularidad. Por otro lado creemos que si bien java es quiza un poco verboso, en este caso nos sirvio para orientarnos con las estructuras de los RDD's y nos ayudo a evitar errores. Quiza si fueramos mas experimentados con el framework la verbosidad seria un problema mayor y seria mas recomendable usar Scala o Python.
+Con respecto a la tecnología escogida, creemos que la sintaxis de Spark es agradable e intuitiva, es una tecnología que es popular y que además esta ganando popularidad. Por otro lado creemos que si bien java es quizá un poco verboso, en este caso nos sirvió para orientarnos con las estructuras de los RDD's y nos ayudó a evitar errores. Quizá si fueramos más experimentados con el framework la verbosidad generaría una incomodidad y sería más recomendable usar Scala o Python.
 
-Con respecto a la complejidad del proyecto, ubo varias consultas que fueron de complejidad baja porque eran similares a las que vimos en clases. Notablemente la consulta de contar palabras mas usadas era calcada, o consultas que requerian comparar cantidad de ocurrencias antes y despues de un evento IMPORTANTE consistian simplemente en filtrar por fecha.
-
-
-De todas formas hubo algunas consultas que fueron mas dificiles, en particular la pregunta de discusiones fue bastante dificil porque hubo que hacer 3 joins. Esto se debio a que hay que poner las llaves correctas en los PairRDD y hay que tener cuidado con los valores anidados que resultan de cada join y ademas fue costosa de ejecutar. Para esta pregunta pensamos en usar Neo4j, que es idoneo para crear el grafo que corresponde a las respuestas entre usuarios, pero esta tecnologia se aprendio muy tarde en el ramo y no alcanzamos a usarla.
-
-La consulta de los top comentadores por anno tambien fue bastante dificil, pero esta esta vez nos costo por el bajo manejo de spark, ya que tuvimos problemas al tratar de usar aggregacion y la serializacion de estructuras. Finalmente optamos por usar agrupacion a pesar de que segun la documentacion esto ocupa mas recursos.
+Con respecto a la complejidad del proyecto, hubo varias consultas que fueron de complejidad baja porque eran similares a las que vimos en clases. Notablemente la consulta de contar palabras más usadas era calcada, o consultas que requerían comparar cantidad de ocurrencias antes y después de un evento **IMPORTANTE** consistían simplemente en filtrar por fecha.
 
 
-A largo del desarrollo del proyecto no guardamos ningun resultado obtenido, sino que los resultados lo mostrabamos en pantalla cada vez que ejecutabamos un job. Esto resulto en perdidas inecesarias de tiempo cuando queriamos recuperar algun resultados previo. Esto creemos que podriamos haberlo hecho mejor.
+De todas formas hubo algunas consultas que fueron más difíciles, en particular la pregunta de discusiones fue la de mayor dificultad porque necesitó de 3 joins. Esto se debió a que se deben poner las llaves correctas en los PairRDD y hay que tener cuidado con los valores anidados que resultan de cada join. Además, esta consulta fue costosa de ejecutar. Para ésta pregunta pensamos en usar Neo4j, que es idóneo para crear el grafo que corresponde a las respuestas entre usuarios, pero esta tecnología se aprendió muy tarde en el ramo y no alcanzamos a usarla.
+
+La consulta de los top comentadores por año también fue bastante difícil, pero ésta esta vez nos costo por el bajo manejo de Spark, ya que tuvimos problemas al tratar de usar agregación y la serialización de estructuras. Finalmente optamos por usar agrupación, a pesar de que según la documentación esto ocupa más recursos.
 
 
-Tomar la decision de correr los jobs localmente creemos que fue una buena decision porque no fuimos afectados por la alta congestion del cluster y la incomodidad de tener que subir nuestros ejecutables cada vez. Gracias a esto nuestros ciclos de desarrollo fueron mas rapidos porque podiamos probar nuestros cambios inmediatamente.
+A largo del desarrollo del proyecto no guardamos ningún resultado obtenido, sino que los resultados lo mostrabamos en pantalla cada vez que ejecutabamos un _job_. Esto resulto en pérdidas inecesarias de tiempo cuando queríamos recuperar algún resultado previo. Esto es un aspecto que podría haber sido mejorado.
 
-Por otro lado, trabajar con intelliJ permite avanzar rapidamente gracias al autocompletado y la sugerencia de metodos posibles sobre un objeto.
 
-De todas formas somos concientes que esto fue posible unicamente porque nuestro dataset era relativamente pequenno, pero el resto de conclusiones son aplicables a nuestro caso porque son independientes del tamanno del dataset.
+Se cree que la decisión de correr los jobs localmente fue una buena, porque no fuimos afectados por la alta congestión del cluster y la incomodidad de tener que subir nuestros ejecutables cada vez. Gracias a esto nuestros ciclos de desarrollo fueron más rápidos, porque podíamos probar nuestros cambios inmediatamente.
+
+Por otro lado, trabajar con IntelliJ permite avanzar rápidamente gracias al autocompletado y la sugerencia de métodos posibles sobre un objeto.
+
+De todas formas somos concientes que esto fue posible únicamente porque nuestro dataset era relativamente pequeño, pero el resto de conclusiones son aplicables a nuestro caso porque son independientes del tamaño del dataset.
 
 
 <!-- que wea -->
