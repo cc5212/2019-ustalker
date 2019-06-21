@@ -28,8 +28,21 @@ Describe the raw dataset that you considered for your project. Where did it come
 <!-- guido -->
 # Methods
 
-Detail the methods used during the project. Provide an overview of the techniques/technologies used, why you used them and how you used them. Refer to the source-code delivered with the project. Describe any problems you encountered.
+## Técnicas y tecnologías utilizadas
 
+El desarrollo del proyecto se divide en dos partes.
+
+### 1. Descarga del dataset
+
+La descarga del dataset se realizó _web scraping_ del foro institucional de la FCFM con Python y BeautifulSoup. 
+
+Para ver más sobre esto, acceder al directorio [intento-de-scrapper](/intento-de-scrapper/).
+
+### 2. Procesamiento de datos
+
+En el procesamiento de datos se realizó localmente utilizó Apache Spark 2.3.3 para para Hadoop 2.7.3. Además se procesaron los datos con Spark 2.1.0 para Hadoop 2.3.0 en el HDFS provisto en el curso.
+
+Los *jobs* de Spark fueron escritos en Java 8. Estos se encuentran en el directorio [java-apps](/java-apps/src/main/java).
 
 <!-- lecaro -->
 # Results
