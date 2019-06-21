@@ -85,8 +85,15 @@ Detail the results of the project. Different projects will have different types 
 
 <!-- quien sabe -->
 # Conclusion
+que aprendimos?
+
+
+
+
 
 Summarise main lessons learnt. What was easy? What was difficult? What could have been done better or more efficiently?
+
+
 
 
 <!-- que wea -->
@@ -101,3 +108,4 @@ You can use this for key code snippets that you don't want to clutter the main t
   * gabriel chaperon
   * valeria guidotti
   * francisco lecaro
+ssss
