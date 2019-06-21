@@ -74,45 +74,50 @@ El último motivo de la elección de Spark el aumento y superioridad en el [inte
 
 La redacción de *jobs* de Spark en Java 8 fue realizada a partir de los ejemplos provistos en clases y en la [página de Spark](https://spark.apache.org/examples.html), acompañado de la lectura y estudio de la documentación de [JavaRDD](https://spark.apache.org/docs/2.2.1/api/java/org/apache/spark/api/java/JavaRDD.html) y [JavaPairRDD](https://spark.apache.org/docs/2.2.1/api/java/org/apache/spark/api/java/JavaPairRDD.html).
 
-
-_Nota: No fueron encontrados problemas en el desarrollo del proyecto._
+Respecto a los resultados, estos no fueron escritos en un archivo de salida, debido a que se priorizó la rapidez para visualizarlos, para lo cual se mostraban los computos finales en salida estándar.
 
 <!-- lecaro -->
-# Results
+# Resultados
 
-Dado que durante el proyecto no se trabajo con un dataset grande no se midio el tiempo que se demoraban las consultas dado que no proporcionaba ningun dato interesante. 
+Dado que durante el proyecto no se trabajó con un dataset grande, no se midió el tiempo que tomaban las consultas, puesto que no proporcionarían ningún dato interesante. 
 
-Dado lo anterior nos enfocaremos en las consultas que se hicieron y los resultados que entregaron.Ahora mostraremos parte de los resulatdos ya que poner los resultados enteros no tendria sentido.
+Mencionado lo anterior, esta sección se enfoca en las consultas realizadas y los resultados que entregaron.
 
-Resultados de palabras mas usadas:
+Todos los resultados se encuentran en la [carpeta del mismo nombre](/resultados/).
 
--Palabras mas usadas en todos lados:
+## Resultados de palabras más usadas
 
-| Palabra | Ocurrencias |
-|----|--------|
-| 😆  | 219121 |
-| up | 53068  |
-| 🙂  | 48623  |
+Los resultados de las palabras más usadas en todas las secciones de texto se encuentran en [CountWords.txt](/resultados/CountWords.txt).
 
--Los comentarios raíz:
+- Palabras más usadas en todos lados:
 
-| Palabra | Ocurrencias |
-|----|--------|
-| saludos | 9125 |
-| gracias | 9086 |
-| 🙂       | 8228 |
+    | Palabra | Ocurrencias |
+    |----|--------|
+    | 😆  | 219121 |
+    | up | 53068  |
+    | 🙂  | 48623  |
 
--Los comentarios hijos:
+- Los comentarios raíz:
 
-| Palabra | Ocurrencias |
-|----|--------|
-| 😆  | 212297 |
-| up | 52788  |
-| 🙂  | 40395  |
+    | Palabra | Ocurrencias |
+    |----|--------|
+    | saludos | 9125 |
+    | gracias | 9086 |
+    | 🙂       | 8228 |
+
+- Los comentarios hijos:
+
+    | Palabra | Ocurrencias |
+    |----|--------|
+    | 😆  | 212297 |
+    | up | 52788  |
+    | 🙂  | 40395  |
 
 
 
-Los threads con mas comentarios:
+## Los threads con más comentarios
+
+Top 3 de temas más comentados. Los resultados (y Top 50) se encuentran en [MostAnsweredRoots.txt](/resultados/MostAnsweredRoots.txt).
 
 | Thread | Cantidad de Comentarios |
 |----|--------|
@@ -121,18 +126,9 @@ Los threads con mas comentarios:
 | juego de la palabra indefinido 2.0 | 107 |
 
 
+## Top 10 _commenters_ por año
 
-Cantidad de personas que comentan por año(ordenado por año):
-
-| Año | Cantidad de Commenters |
-|----|--------|
-| 2002 | 229  |
-| 2011 | 3876 |
-| 2018 | 3961 |
-
-
-
-Top 10 commenters por año(por temas de espacio se mostraran 3 por año):
+Se muestra el Top 3 resultados por año. En el archivo [TopCommanders.txt](/resultados/TopCommanders.txt) de la carpeta de resultados se ve el Top 10 por todos los años en los que el foro ha estado activo.
 
 | Año| Persona(Cantidad de Comentarios) |
 |----|--------|
@@ -142,7 +138,9 @@ Top 10 commenters por año(por temas de espacio se mostraran 3 por año):
 
 
 
-Top commenters de integrantes del curso curso: 
+## Top _commenters_ de integrantes del curso 
+
+Se muestra solo el Top 5 de _commenters_ del curso, tal como en la consulta mencionada en el punto anterior, el resultado completo está en el archivo [TopCommanders.txt](/resultados/TopCommanders.txt).
 
 | Persona| Cantidad de Comentarios |
 |----|--------|
@@ -154,9 +152,23 @@ Top commenters de integrantes del curso curso:
 
 
 
-Par de personas que han discutido:
+## Cantidad de personas distintas que comentan por año
 
-Se entiende por una discusion cuando un par de personas  A, B comentan de tal forma que se produce la siguiente interaccion al menos una vez en un thread: A comenta, B le responde a A, A le responde de vuelta a B.
+Se muestran los años de inicio del foro, el último año calendario completo y el año en que el Top 10 de _commenters_ tenía una mayor cantidad de comentarios (2011). Los resultados se encuentran en [PersonsPerYear.txt](/resultados/PersonsPerYear.txt).
+
+
+| Año | Cantidad de Commenters |
+|----|--------|
+| 2002 | 229  |
+| 2011 | 3876 |
+| 2018 | 3961 |
+
+
+## Pares de personas que han discutido
+
+Se entiende por una discusión cuando un par de personas  (A, B) comentan de tal forma que se produce la siguiente interacción al menos una vez en un thread: A comenta, B le responde a A, A le responde a B.
+
+Los resultados completos se encuentran en el archivo [TopFighters.txt](/resultados/TopFighters.txt).
 
 | Persona 1 | Persona 2 |Cantidad de discusiones|
 |------------------------|------------------------|-----|
@@ -166,13 +178,15 @@ Se entiende por una discusion cuando un par de personas  A, B comentan de tal fo
 
 
 
-Tambien se hicieron consultas con un fin mas ludico como:
+## Otras consultas
 
--La cantidad de votaciones "+1/-1" que han habido antes y despues de que se sacara el "+1/-1" del foro.
+También se hizo consultas con un fin más lúdico como:
 
--Cuantas veces ha comentado Patricio Aceituno antes y despues que le dijieran "que bacan tu apellido".
+- La cantidad de votaciones "+1/-1" que hubo antes y después de que se sacara el "+1/-1" del foro. Ver [PlusOneMinusOne.txt](/resultados/PlusOneMinusOne.txt).
 
--Cuantas veces ha comentado antes y despues del "incidente de las rodilleras".
+- Cuántas comentarios hizo Patricio Aceituno antes y después que le dijieran "que bacan tu apellido". Ver [DuckOlives.txt](/resultados/DuckOlives.txt).
+
+- Cuántos comentarios hizo Julio Salas antes y después del "incidente de las rodilleras". Ver [JulyRooms.txt](/resultados/JulyRooms.txt).
 
 
 
