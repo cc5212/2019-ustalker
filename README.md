@@ -49,10 +49,10 @@ Los *jobs* de Spark fueron escritos en Java 8. Estos se encuentran en el directo
 
 Detail the results of the project. Different projects will have different types of results; e.g., run-times or result sizes, evaluation of the methods you're comparing, the interface of the system you've built, and/or some of the results of the data analysis you conducted.
 
-     | saludos | 9125 |
-     |---------|------|
-     | gracias | 9086 |
-     | 🙂       | 8228 |
+| saludos | 9125 |
+|---------|------|
+| gracias | 9086 |
+| 🙂      | 8228 |
 
 
 <!-- quien sabe -->
