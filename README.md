@@ -37,8 +37,9 @@ Los nombre son autoexplicativos.
 
 
 Por otro lado, los comentarios que son respuestas tiene el siguiente header:
-| id_mensaje | id_raiz | id_padre | autor | fecha | mensaje |
-|------------|:-------:|---------:|-------|-------|---------|
+| id_mensaje  | id_raiz   | id_padre  | autor   | fecha   | mensaje   |
+|------------ |:-------:  |---------: |-------  |-------  |---------  |
+
 El primer id es del mensaje mismo, este id es unico entre todos los mensajes, incluyendo raices y comentarios respuesta. La id_raiz corresponde a la id de la raiz a la que pertenece la respuesta. La id_padre corresponde a la id del mensaje directo al que responde, a su padre directo. El resto de campos son autoexplicativos.
 
 
