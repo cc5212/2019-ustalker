@@ -74,7 +74,6 @@ El último motivo de la elección de Spark el aumento y superioridad en el [inte
 
 La redacción de *jobs* de Spark en Java 8 fue realizada a partir de los ejemplos provistos en clases y en la [página de Spark](https://spark.apache.org/examples.html), acompañado de la lectura y estudio de la documentación de [JavaRDD](https://spark.apache.org/docs/2.2.1/api/java/org/apache/spark/api/java/JavaRDD.html) y [JavaPairRDD](https://spark.apache.org/docs/2.2.1/api/java/org/apache/spark/api/java/JavaPairRDD.html).
 
-Respecto a los resultados, estos no fueron escritos en un archivo de salida, debido a que se priorizó la rapidez para visualizarlos, para lo cual se mostraban los computos finales en salida estándar.
 
 _Nota: No fueron encontrados problemas en el desarrollo del proyecto._
 
@@ -118,7 +117,6 @@ Los threads con mas comentarios:
 | Thread | Cantidad de Comentarios |
 |----|--------|
 | a Beauchef le esta faltando Rock   | 138 |
-|------------------------------------|-----|
 | Baños Cafetería                    | 108 |
 | juego de la palabra indefinido 2.0 | 107 |
 
@@ -126,8 +124,9 @@ Los threads con mas comentarios:
 
 Cantidad de personas que comentan por año(ordenado por año):
 
+| Año | Cantidad de Commenters |
+|----|--------|
 | 2002 | 229  |
-|------|------|
 | 2011 | 3876 |
 | 2018 | 3961 |
 
@@ -135,17 +134,19 @@ Cantidad de personas que comentan por año(ordenado por año):
 
 Top 10 commenters por año(por temas de espacio se mostraran 3 por año):
 
-| 2002 | Mauricio Vásquez M./93      | Marcelo Vega F./52              | Jorge Ramirez Lores/49 |
-|------|-----------------------------|---------------------------------|------------------------|
-| 2011 | Rodolfo Gutierrez Romo/7102 | Anibal Estabn Llanos Prado/3085 | Andrés V Aguirre/2923  |
-| 2018 | Cesar Diaz B./259           | Mario Medina Roa/201            | Pablo Pizarro/195      |
+| Año| Persona(Cantidad de Comentarios) |
+|----|--------|
+| 2002 | Mauricio Vásquez M.(93)      | Marcelo Vega F.(52)           | Jorge Ramirez Lores(49) |
+| 2011 | Rodolfo Gutierrez Romo(7102) | Anibal Estabn Llanos Prado(3085) | Andrés V Aguirre(2923)  |
+| 2018 | Cesar Diaz B.(259)           | Mario Medina Roa(201)            | Pablo Pizarro(195)      |
 
 
 
-Top commenters del curso: 
+Top commenters de integrantes del curso curso: 
 
+| Persona| Cantidad de Comentarios |
+|----|--------|
 | Simon Sepúlveda Osses | 570 |
-|-----------------------|-----|
 | Juan P. Ruiz          | 535 |
 | Adriana Concha        | 378 |
 | Karina Parga          | 331 |
@@ -155,10 +156,11 @@ Top commenters del curso:
 
 Par de personas que han discutido:
 
-Se entiende por una discusion cuando un par de personas  A, B comentan de tal forma que se produce la siguiente interaccion al menos una vez: A comenta, B le responde a A, A le responde de vuelta a B.
+Se entiende por una discusion cuando un par de personas  A, B comentan de tal forma que se produce la siguiente interaccion al menos una vez en un thread: A comenta, B le responde a A, A le responde de vuelta a B.
 
-| Andrés V. Aguirre      | Carlos Cárdenas        | 123 |
+| Persona 1 | Persona 2 |Cantidad de discusiones|
 |------------------------|------------------------|-----|
+| Andrés V. Aguirre      | Carlos Cárdenas        | 123 |
 | Carlos Alvarado Godoy  | Rodolfo Gutiérrez Romo | 112 |
 | Ignacio Correa Falconi | Rodolfo Gutiérrez Romo | 85  |
 
