@@ -135,8 +135,8 @@ Top 3 de temas más comentados. Los resultados (y Top 50) se encuentran en [Most
 
 Se muestra el Top 3 resultados por año. En el archivo [TopCommanders.txt](/resultados/TopCommanders.txt) de la carpeta de resultados se ve el Top 10 por todos los años en los que el foro ha estado activo.
 
-| Año| Persona(Cantidad de Comentarios) |
-|----|--------|
+| Año| Persona(Cantidad de Comentarios) | | |
+|----|--------|----|--------|
 | 2002 | Mauricio Vásquez M.(93)      | Marcelo Vega F.(52)           | Jorge Ramirez Lores(49) |
 | 2011 | Rodolfo Gutierrez Romo(7102) | Anibal Estabn Llanos Prado(3085) | Andrés V Aguirre(2923)  |
 | 2018 | Cesar Diaz B.(259)           | Mario Medina Roa(201)            | Pablo Pizarro(195)      |
