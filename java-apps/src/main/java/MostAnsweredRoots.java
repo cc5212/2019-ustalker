@@ -32,7 +32,7 @@ public class MostAnsweredRoots {
         rootTitleAndOccurrences
                 .mapToPair(tup -> new Tuple2<>(tup._2._2, tup._2._1))
                 .sortByKey(false)
-                .take(10)
+                .take(50)
                 .forEach(System.out::println);
 
 //        JavaPairRDD<String, Integer> r = rootTitleAndOccurrences.mapToPair(tup -> tup._2);

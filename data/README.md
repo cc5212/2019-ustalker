@@ -1,6 +1,7 @@
 # Descripcion de los datos
-los fixed son los buenos
-pueden haber filas repetidas en ambos
+Los datos se pueden encontrar en el siguiente enlace https://users.dcc.uchile.cl/~gchapero/ustalker/ustalker_wrepeat.tar.xz
+
+Hay filas repetidas en ambos archivos
 
 ## root
 comentarios raiz en ucursos
@@ -20,4 +21,8 @@ las columnas son
 (id, id del comentario raiz, id del papa directo, autor, fecha, mensaje)
 ```
 
-mismos comentarios que para root donde aplica
+Mismos comentarios que para root donde aplica
+
+# Datos extra
+
+Ademas usamos una lista de stop words sacada de internet y la lista de los integrantes del curso.

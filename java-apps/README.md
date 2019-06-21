@@ -36,9 +36,6 @@ A continuacion se documentan los argumentos que reciben cada uno de los jobs
     1. roots 
     2. childs
     3. comrades
-* TopCommentersPerTheme
-    1. roots 
-    2. childs 
 * TopFighters
     1. roots
     2. childs

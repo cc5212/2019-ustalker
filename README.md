@@ -2,6 +2,8 @@
 Los tenemos a todos identificados. [Gabriel Chaperon, Valeria Guidotti, Francisco Lecaros. Group 15]
 
 
+# Descripcion del contenido del repositorio
+En el directorio data se encuentra una pequeña descripcion de los datos junto con archivos extra que fueron usados para el proyecto, como las stop words y la lista de integrantes del curso.
 
 # Overview
 
