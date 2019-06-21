@@ -218,11 +218,3 @@ De todas formas somos concientes que esto fue posible unicamente porque nuestro 
 
 Esto es un [apendice](https://www.efesalud.com/wp-content/blogs.dir/2/files/2018/09/apendice-e1537881196664.jpg)
 
-
-### INFO
-* grupo 15
-* integrantes:
-  * gabriel chaperon
-  * valeria guidotti
-  * francisco lecaro
-ssss
