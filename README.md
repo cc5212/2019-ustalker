@@ -76,8 +76,7 @@ Detail the results of the project. Different projects will have different types 
 
 | saludos | 9125 |
 |---------|------|
-| gracias | 9086 |
-| 🙂      | 8228 |
+
 
 
 <!-- quien sabe -->
